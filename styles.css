@@ -1,0 +1,62 @@
+.container {
+    background: linear-gradient(#bd09b7, #6b4cf5);
+    font-family: Arial, sans-serif;
+    color: white;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    /* sombra al form */
+    box-shadow: 0 8px 6px -6px rgb(47, 217, 255);
+    
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  select {
+    padding: 7px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+  }
+  
+ /* check */
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* button: padding de 5px arriba y abajo, y 15px a los lados */
+  button {
+    padding: 5px 15px;
+    background-color: white;
+    color: #0a0a0e;
+    border-radius: 5px;
+    border: none;
+    align-self: flex-end;
+  }
+
+  /* mobile first: 100% de ancho cuando la pantalla mide menos de 500px. Para pantallas de 500px o más el ancho debe ser de 300px */
+  @media (max-width: 500px) {
+    .container {
+      width: 100%;
+    }
+  }
